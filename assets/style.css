@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul li {
+    margin: 3px;
+}
