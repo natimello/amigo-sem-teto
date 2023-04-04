@@ -1,27 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    vertical-align: baseline;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
 }
 
-a {
-    text-decoration: none;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
+
+a, p {
+    font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navbar */
 
 .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    flex-wrap: wrap;
+    margin: 20px 50px;
+}
+
+.header > img {
+    height: 60px;
+
 }
 
 .menu ul {
+    list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
-.menu ul li {
-    margin: 3px;
+ul li > a {
+    color: #2596be;
 }
+
+ul li > a:hover {
+    color: #cd8f69;
+}
+
+
+
+/* main container */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    background-image: url(img/dog-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 600px;
+    padding: 0 50px;
+}
+
+.banner > p {
+    font-family: 'Lilita One', cursive;
+    font-size: 60px;
+}
+
+.banner > p> span {
+    font-family: 'Lilita One', cursive;
+    color: #2596be;
+}
+
+#about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 90px auto;
+    max-width: 800px;
+}
+
+#about-text > h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #2596be;
+}
+
+#about-text > p {
+    text-align: center;
+}
+
+.about-data {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 200px;
+    margin: 20px auto;
+    font-size: 17px;
+}
+
+.about-data > p > span {
+    font-family: 'Lilita One', cursive;
+    font-size: 50px;
+    color: #2596be;
+}
+
+#animals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px auto;
+}
+
+#animals > h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #2596be;
+}
+
+.find-friend {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.animal-infos {
+    background-color: #f1cbb2;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+}
+
+.animal-infos > img {
+    width: 100%;
+    height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.animal-infos > .infos-text > h1 {
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
