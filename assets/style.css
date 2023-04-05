@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #2595be17;
 }
 
 a, p {
@@ -48,11 +49,11 @@ html {
 }
 
 ul li > a {
-    color: #2596be;
+    color: #2595beb2;
 }
 
 ul li > a:hover {
-    color: #cd8f69;
+    color: #2596be;
 }
 
 
@@ -108,6 +109,7 @@ ul li > a:hover {
 
 #about-text > p {
     text-align: center;
+    margin-top: 20px;
 }
 
 .about-data {
@@ -133,11 +135,17 @@ ul li > a:hover {
     margin: 90px auto;
 }
 
+
 #animals > h1 {
     font-family: 'Lilita One', cursive;
     font-size: 60px;
     text-transform: capitalize;
     color: #2596be;
+}
+
+#animals > p {
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .find-friend {
@@ -150,25 +158,79 @@ ul li > a:hover {
 }
 
 .animal-infos {
-    background-color: #f1cbb2;
-    border-radius: 20px;
-    width: 300px;
-    height: 400px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    border-radius: 10px;
+    width: 280px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .animal-infos > img {
-    width: 100%;
-    height: 300px;
-    max-width: 300px;
-    min-width: 300px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    max-width: 280px;
+    min-width: 280px;
+    max-height: 250px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .animal-infos > .infos-text > h1 {
-    font-family: 'Lilita One', cursive;
-    text-align: center;
-    font-size: 30px;
-    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #2596be;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
+.animal-infos > .infos-text > h1:hover {
+    color: rgb(255, 181, 84);
+}
+
+.animal-infos > .infos-text > p {
+    color: darkgray;
+    margin: 20;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    margin-top: -10px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2596be;
+    height: 100px;
+}
+
+.social-media > a {
+    margin: 10px;
+    color: rgb(212, 208, 208);
+    font-size: 30px;
+}
+
+.social-media > a:hover {
+    color: white;
+}
+
+.others {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.others > a {
+    color: rgb(212, 208, 208);
+    font-size: 17px;
+}
+
+.others > a:hover {
+    color: white;
+}
